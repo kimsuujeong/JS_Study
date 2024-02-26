@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.google.com">뭐꼬;</a>
+    <form action="https://jsonplaceholder.typicode.com/users" method="get">
+
+        ID : <input type="text" name="id"><br>
+        <!-- 사용자명 : <input type="text" name="username"> -->
+        <input type="submit" value="실행">
+    </form>
+    
+    <script>
+        let form = document.querySelector('input[type=submit]');
+        form.addEventListener('click', function(e){
+            e.preventDefault();
+            console.log("test");
+            let txt = document.querySelector("input[type=text]");
+            console.dir(txt);
+
+            if(txt.vlaue === "" || txt.vlaue === undefined || txt.vlaue === undefined){
+                alert("입력확인바람");
+            } else{
+                
+            }
+
+
+        })
+    </script>
+</body>
+</html>

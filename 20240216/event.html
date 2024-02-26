@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 이벤트 : 어떠한 사건들.... 
+    - 브라우저 에서의 이벤트는 사용자들이 하는 무언가.
+    - 브라우저의 이벤트는 대부분 DOM과 관련있음.
+    - 이벤트의 발생 시점은 사전에 인지하기 매우 어려움
+    - 즉 이벤트가 발생하면 누군가는 감지해야하며 그에 대응하는 처리가 필요.
+    - 이벤트 처리를 통해 사용자와 웹 서비스는 상호작용을 하게된다.
+    - 이벤트는 발생하면 그에 맞는 반응이 필요.
+       (js는 일반적으로 함수를 통해 이벤트를 처리)
+     https://developer.mozilla.org/ko/docs/Web/Events 
+
+이벤트 종류
+    - load : 웹페이지의 로드가 완료됐을때.
+    - unload : 웹 페이지가 언로드될때(새로운 페이지 요청시)
+    - error : 브라우저가 js 오류를 만나거나 요청한 자원이 존재하지 않는 경우
+    - resize : 브라우저 창의 크기를 조절했을때
+    - scroll : 사용자가 페이지를 위아래 스크롤시
+    - select : 텍스트 선택시
+
+키보드 이벤트
+    - keyup : 누르고 있던 키를 뗄 때
+    - keydown : 키를 누르고 있을때
+    - keypress : 키를 누르고 땠을때.
+
+마우스 이벤트
+    - click : 마우스 버튼 클릭 시
+    - dbclick : 마우스 버튼 더블클릭
+    - mousedown : 마우스 버튼을 누르고 있을때
+    - mouseup : 누르고 있던 마우스 버튼을 땔 때
+    - mousemove : 마우스를 움직일때
+    - mouseover : 마우스가 요소 위로 움직였을때
+    - mouseout : 마우스 커서가 요소 바깥으로 움직였을때.
+
+포커스 이벤트
+    - focus : 요소가 집중되었을때(선택되었을때)
+    - blur : 포커스를 잃었을때.
+    
+폼 이벤트
+    - input : input이나 textarea 요소의 값이 변경됐을때
+    - change : select box, checkbox, radio의 상태 변경시.
+    - submit : 제출시.
+
+클립보드 이벤트
+    - cut : 컨텐츠 잘라내기
+    - copy : 컨텐츠 복사
+    - paste : 컨텐츠 붙여넣기
+
+이벤트 핸들러(이벤트 리스너)  -->
+
+
+    <button onclick="gunchim()">누름 군침이노</button>
+    <script src="/20240216/event.js"></script>
+
+    <!--
+        버블링과 캡처링은 따로 구동되지 않음
+        캡처링에서 버블링으로 끝남
+        버블링 : 자식요소에서 발생한 이벤트가 부모 요소로 전파되는 것
+        캡처링 : 자식 요소에서 발생한 이벤트가 부모부터 시작하여 이벤트를 발생시킨 자식 요소까지 도달하는 것
+
+        이벤트 중단
+        preventDefault : 요소가 가진 기본동작을 중단 시키는 메서드
+        stopProgragation : 이벤트 자체가 전파되는 것을 막는 것
+    -->
+</body>
+
+</html>
